@@ -10,6 +10,10 @@
     padding-top:120px;
 }
 
+// .hero-content{
+//     background: rgba(198, 198, 250, 0.349);
+// }
+
 .hire-button-container{
     padding-top: 20px;
     position: relative;
@@ -45,5 +49,15 @@
     .hero {
         padding-top:30px;
         text-align: center;
+    }
+    .hire-button {
+        border-color:#7892F6 !important;
+    }
+    .btn-primary, .btn-primary:active, .btn-primary:visited {
+        background-color: #7892F6 !important;
+    }
+    
+    .btn-primary:hover{
+        background-color: #6369F7 !important;
     }
   }
