@@ -2,12 +2,13 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
 }
+.logo-svg {
+  width: 120px;
+  height: 80px;
+}
 .nav-grid-brand {
     grid-column: 1 / span 10;
-    color: white;
-    .nav-link {
-        color: white;
-    }
+
 }
 .nav-grid-item {
     text-align: center;
@@ -19,16 +20,17 @@
     }
     text-align: center;
 }
-.nav-grid-item:hover {
+.nav-link:hover {
     background-color: rgba(222, 195, 248, 0.507);
+    border-bottom: 3px solid rgba(222, 195, 248, 0.39);
 }
 .nav-link {
     color: white;
 }
 .active {
-    color: rgb(0, 0, 0); 
+    color: rgb(83, 152, 241) !important;
     background-color: rgba(255, 255, 255, 0.76);
-    border-bottom: 3px solid rgba(222, 195, 248, 0.39); 
+    border-bottom: 3px solid rgba(222, 195, 248, 0.39);
 }
 // .Bg {
 //     background-image: url("../../assets/PicsArt_07-21-02.43.29.png");
@@ -41,10 +43,15 @@
 }
 
 @media screen and (max-width: 650px) {
+    .logo-svg {
+    width: 120px;
+    height: 70px;
+    padding-bottom:5px;
+  }
     .nav-grid {
         // justify-content: center;
         grid-template-columns: auto auto auto auto;
-        
+
         text-align: center;
     }
     .nav-grid-brand {
