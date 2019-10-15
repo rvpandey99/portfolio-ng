@@ -3,15 +3,15 @@ const express = require("express");
 require('dotenv').config();
 const compression = require("compression");
 
-const _port = 4100;
-const _app_folder = 'dist/raviportfolio';
+const _port = process.env.PORT || "4100";
+const _app_folder = 'dist/ravi-portfolio';
 
 const app = express();
 app.use(compression());
 
 
 // ---- SERVE STATIC FILES ---- //
-app.server.get('*.*', express.static(_app_folder, {maxAge: '1y'}));
+app.get('*.*', express.static(_app_folder, {maxAge: '1y'}));
 
 // ---- SERVE APLICATION PATHS ---- //
 app.all('*', function (req, res) {
