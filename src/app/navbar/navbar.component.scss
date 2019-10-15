@@ -14,7 +14,8 @@
 }
 .nav-grid-button {
     .btn-outline-light{
-        border-radius: 0;
+        border-radius: 50px;
+        width: 100px;
     }
     text-align: center;
 }
@@ -39,7 +40,7 @@
     border-radius: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .nav-grid {
         // justify-content: center;
         grid-template-columns: auto auto auto auto;

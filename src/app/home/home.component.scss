@@ -1,10 +1,49 @@
 .Bg {
     background-image: url("../../assets/dev-flip.png");
-    background-size: 70vw;
+    background-size: auto 90vh;
     background-repeat: no-repeat;
     background-position: bottom left;
+    padding-bottom: 40vh;
 }
 
 .hero {
-    height: 91vh;
+    padding-top:120px;
 }
+
+.hire-button-container{
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+}
+
+.hire-button {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    width: 150px;
+    border-color: #9780FB !important;
+}
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #9780FB !important;
+}
+
+.btn-primary:hover{
+    background-color: #7359F9 !important;
+}
+
+@media screen and (min-width: 1250px) {
+    .hero {
+        padding-top:200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Bg {
+        background-size: auto 40vh;
+        height: 88vh;
+    }
+    .hero {
+        padding-top:30px;
+        text-align: center;
+    }
+  }
